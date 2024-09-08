@@ -15,7 +15,7 @@ for index, row in df.iterrows():
     # poczaątek linii x1,y1 koniec linii x2,y2
     # x1 odleglosc od lewej krawędzi y od lewej gornej krawędzi
     pdf.line(10, 21, 200, 21)
-
+    # dodawanie okreslonej ilości stron z pliku csv
     for i in range(row["Pages"] - 1):
         pdf.add_page()
 
